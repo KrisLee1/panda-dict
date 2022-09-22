@@ -1,8 +1,8 @@
 <!--
  * @Author: error: git config user.name && git config user.email & please set dead value or install git
  * @Date: 2022-09-02 22:15:03
- * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
- * @LastEditTime: 2022-09-17 21:04:09
+ * @LastEditors: KrisLee 2030000020@qq.com
+ * @LastEditTime: 2022-09-22 17:14:49
  * @FilePath: /vscode projects/Electron/card-dict/src/App.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -86,9 +86,9 @@
             }
           },
           shortcutKeys: {
-            open: ['Meta', 'W'],
-            search: ['Meta', 'Q'],
-            imgSearch: ['Meta', 'E']
+            open: ['Alt', 'D'],
+            search: ['Alt', 'A'],
+            imgSearch: ['Alt', 'S']
           }
         }
       }
