@@ -1,0 +1,43 @@
+<!--
+ * @Author: error: git config user.name && git config user.email & please set dead value or install git
+ * @Date: 2022-09-09 01:34:52
+ * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
+ * @LastEditTime: 2022-09-11 17:50:09
+ * @FilePath: /VSCodeProjects/Electron/card-dict/electron/modules/screen_capture.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Capture</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body {
+                overflow: hidden;
+                cursor: none;
+            }
+            #video,
+            #rect {
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+            #rect {
+                cursor: crosshair;
+                z-index: 100;
+            }
+        </style>
+    </head>
+        <video id="video"></video>
+        <canvas id="rect"></canvas>
+        <canvas id="slice" hidden></canvas>
+        <script src="capture_renderer.js"></script>
+    </body>
+</html>

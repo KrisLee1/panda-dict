@@ -1,0 +1,51 @@
+{
+  "name": "panda-dict",
+  "version": "1.0.0",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron": "wait-on tcp:5173 && cross-env NODE_ENV=development electron .",
+    "electron:serve": "concurrently -k \"yarn dev\" \"yarn electron\"",
+    "electron:build": "vite build && electron-builder"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "crypto-js": "^4.1.1",
+    "robotjs": "0.6.0",
+    "vue": "^3.2.37",
+    "vue-uuid": "3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.3",
+    "concurrently": "^7.3.0",
+    "cross-env": "^7.0.3",
+    "electron": "17.1.0",
+    "electron-builder": "^23.3.3",
+    "electron-rebuild": "^3.2.9",
+    "vite": "^3.0.7",
+    "wait-on": "^6.0.1"
+  },
+  "build": {
+    "appId": "com.panda-dict.app",
+    "productName": "胖哒词典",
+    "copyright": "Copyright © 2022 KrisLee",
+    "mac": {
+      "icon": "electron/images/mac_icon.icns",
+      "category": "public.app-category.utilities"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist_electron"
+    }
+  }
+}

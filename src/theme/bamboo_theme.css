@@ -1,0 +1,155 @@
+#bambooTheme {
+    background-color: #1f1f2130;
+}
+
+#app:hover #bambooTheme .closeWinBtn {
+    background-color: #CACAF1;
+}
+
+#app:hover #bambooTheme .minimizeWinBtn {
+    background-color: #AAE2E6;
+}
+
+#app:hover #bambooTheme .topWinBtn {
+    background-color: #CDEBA8;
+}
+
+#bambooTheme ::selection{
+    color: #242424;
+    background-color: #CDEBA8;
+}
+
+#bambooTheme .box {
+    outline: none;
+    margin-top: .4rem;
+    padding: .3rem .7rem;
+    border-radius: 1rem;
+    border: 0;
+    background-color: #28282A80;
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+    transition: background-color .5s ease;
+}
+#bambooTheme .innerInput {
+    font-size: 1rem;
+    width: 100%;
+    height: 2.6rem;
+    padding: 0 .6rem;
+    margin-bottom: .4rem;
+    border-radius: 10rem;
+    outline: none;
+    border: 0;
+    background-color: #30303280;
+    transition: background-color 600ms ease;
+}
+#bambooTheme .button:hover,
+#bambooTheme .input:hover {
+    background-color: #3b3b3e80;
+    border: 0;
+}
+#bambooTheme .input:focus,
+#bambooTheme .box:focus {
+    background-color: #29283880;
+    border: 0;
+}
+
+#bambooTheme .innerInput:focus {
+    background-color: #303043;
+    border: 0;
+}
+
+#bambooTheme .phoneticBox .phoneticLabel {
+    color: #2d2d2d
+}
+#bambooTheme .phoneticBox .us-phonetic {
+    background-color: #AAE2E6;
+}
+#bambooTheme .phoneticBox .uk-phonetic {
+    background-color: #CDEBA8;
+}
+#bambooTheme .phoneticBox .us-phonetic:hover {
+    background-color: #86e1e8;
+}
+#bambooTheme .phoneticBox .uk-phonetic:hover {
+    background-color: #bced7f;
+}
+#bambooTheme .phoneticBox .phoneticLabel .play-icon{
+    background-image: url("../assets/image/loudspeakers_icon_2.png");
+}
+#bambooTheme .levelsBox .levelLabel{
+    border-left: 2px solid #CDEBA8;
+}
+
+
+#bambooTheme .backMainBtn {
+    color: #000;
+    background-color: #CDEBA8;
+}
+#bambooTheme .backMainBtn:hover {
+    color: #000;
+    background-color: #bced7f;
+}
+
+#bambooTheme .shortcutKey {
+    color: #000;
+    flex-shrink: 0;
+    margin: .2rem;
+    border-radius: .6rem;
+    padding: 0 .4rem;
+    background-color: #AAE2E6;
+}
+
+
+@media (prefers-color-scheme: light) {
+    #bambooTheme {
+        background-color: #bde0ff50;
+    }
+
+    #bambooTheme ::selection{
+        background-color: #CDEBA8;
+    }
+
+    #bambooTheme .box {
+        background-color: var(--background-light);
+        box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    #bambooTheme .innerInput {
+        background-color: #F6F6F650;
+    }
+
+    #bambooTheme .button:hover,
+    #bambooTheme .input:hover {
+        background-color: #e1e1fdB0;
+    }
+    #bambooTheme .input:focus,
+    #bambooTheme .box:focus {
+        background-color: #CACAF1A0;
+    }
+
+    #bambooTheme .searchBox .clearBtn {
+        opacity: .6;
+        background-color: rgb(255, 255, 255);
+        transition: background-color .5s ease;
+    }
+    #bambooTheme .searchBox .clearBtn:hover {
+        opacity: 1;
+        background-color: rgb(108, 108, 108);
+    }
+
+    #bambooTheme .phoneticBox .phoneticLabel .play-icon{
+        background-image: url("../assets/image/loudspeakers_icon_2.png");
+    }
+
+    #bambooTheme .backMainBtn {
+        color: #000;
+        background-color: #CDEBA8;
+    }
+    #bambooTheme .backMainBtn:hover {
+        color: #000;
+        background-color: #bced7f;
+    }
+    
+    #bambooTheme .shortcutKey {
+        background-color: rgb(213, 236, 252);
+    }
+}

@@ -1,0 +1,178 @@
+#cartoonTheme {
+    background-color: #23272A;
+}
+
+#cartoonTheme ::selection{
+    background-color: #323ca6;
+}
+
+#cartoonTheme #titleBar {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+#cartoonTheme #titleBar .winControlBtn {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#cartoonTheme .main-container {
+    padding-top: 0;
+}
+
+#cartoonTheme #dictionaryPanel,
+#cartoonTheme #settingPanel {
+    padding-top: 30px;
+}
+
+#cartoonTheme .box {
+    outline: none;
+    border-radius: 0;
+    margin-top: .2rem;
+    padding: .3rem .7rem;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: #2b2f33;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    transition: background-color .5s ease,
+                border .5s ease;
+}
+#cartoonTheme .innerInput {
+    font-size: 1rem;
+    width: 100%;
+    height: 2.6rem;
+    padding: 0 .6rem;
+    margin-bottom: .4rem;
+    border-radius: 0;
+    outline: none;
+    border: 2px solid rgba(50, 50, 50, 0);
+    background-color: #2f3438;
+    transition: border 600ms ease,
+                background-color 600ms ease;
+}
+#cartoonTheme .button:hover,
+#cartoonTheme .input:hover {
+    background-color: #4f5bd9;
+    border: 2px solid rgba(222, 222, 222, 0);
+}
+#cartoonTheme .input:focus,
+#cartoonTheme .box:focus {
+    background-color: #4f5bd9;
+    border: 2px solid rgb(222, 222, 222);
+}
+
+#cartoonTheme .searchBox .clearBtn {
+    opacity: .5;
+    border: 2px solid rgb(222, 222, 222);
+    background-color: #2b2f33;
+}
+#cartoonTheme .searchBox .clearBtn:hover {
+    opacity: 1;
+}
+
+#cartoonTheme .phoneticBox .us-phonetic {
+    background-color: #7d4fd9;
+}
+#cartoonTheme .phoneticBox .uk-phonetic {
+    background-color: #4f5bd9;
+}
+#cartoonTheme .phoneticBox .us-phonetic:hover {
+    background-color: #7d4fd9;
+}
+#cartoonTheme .phoneticBox .uk-phonetic:hover {
+    background-color: #4f5bd9;
+}
+#cartoonTheme .phoneticBox .phoneticLabel .play-icon{
+    background-image: url("../assets/image/loudspeakers_icon.png");
+}
+#cartoonTheme .levelsBox .levelLabel{
+    border-left: 2px solid #4f5bd9;
+}
+
+#cartoonTheme .backMainBtn {
+    background-color: #4f5bd9;
+}
+#cartoonTheme .backMainBtn:hover {
+    color: #fff;
+    background-color: #4f5bd9;
+}
+
+#cartoonTheme .shortcutKey {
+    color: #000;
+    flex-shrink: 0;
+    margin: .2rem;
+    padding: 0 .3rem;
+    background-color: #eeeeee;
+}
+
+
+@media (prefers-color-scheme: light) {
+    #cartoonTheme {
+        background-color: rgb(255, 255, 255);
+    }
+
+    #cartoonTheme ::selection{
+        background-color: #E9D7FF;
+    }
+
+    #cartoonTheme .box {
+        border: 2px solid rgb(10, 10, 10);
+        background-color: var(--background-light);
+    }
+
+    #cartoonTheme .innerInput {
+        border: 2px solid rgb(246, 246, 246);
+        background-color: rgb(243, 243, 243);
+    }
+
+    #cartoonTheme .button:hover,
+    #cartoonTheme .input:hover {
+        background-color: rgb(233, 215, 255);
+        border: 2px solid rgb(10, 10, 10);
+    }
+    #cartoonTheme .input:focus,
+    #cartoonTheme .box:focus {
+        background-color: rgb(220, 192, 255);
+        border: 2px solid rgb(10, 10, 10);
+    }
+
+    #cartoonTheme .searchBox .clearBtn {
+        opacity: .6;
+        border: 2px solid rgb(10, 10, 10);
+        background-color: black;
+    }
+    #cartoonTheme .searchBox .clearBtn:hover {
+        opacity: 1;
+        border: 2px solid rgb(10, 10, 10);
+        background-color: black;
+    }
+
+    #cartoonTheme .phoneticBox .us-phonetic {
+        background-color: rgb(233, 215, 255);
+    }
+    #cartoonTheme .phoneticBox .uk-phonetic {
+        background-color: rgb(213, 236, 252);
+    }
+    #cartoonTheme .phoneticBox .us-phonetic:hover {
+        background-color: rgb(220, 192, 255);
+    }
+    #cartoonTheme .phoneticBox .uk-phonetic:hover {
+        background-color: rgb(192, 229, 255);
+    }
+    #cartoonTheme .phoneticBox .phoneticLabel .play-icon{
+        background-image: url("../assets/image/loudspeakers_icon_2.png");
+    }
+    #cartoonTheme .levelsBox .levelLabel{
+        border-left: 2px solid rgb(220, 192, 255);
+    }
+
+    #cartoonTheme .backMainBtn {
+        background-color: rgb(233, 215, 255);
+    }
+    #cartoonTheme .backMainBtn:hover {
+        color: #000;
+        background-color: rgb(220, 192, 255);
+    }
+
+    #cartoonTheme .shortcutKey {
+        background-color: rgb(213, 236, 252);
+    }
+}
