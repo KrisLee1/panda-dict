@@ -2,7 +2,7 @@
  * @Author: KrisLee 2030000020@qq.com
  * @Date: 2022-09-22 15:53:48
  * @LastEditors: KrisLee 2030000020@qq.com
- * @LastEditTime: 2022-09-25 13:39:09
+ * @LastEditTime: 2022-09-25 13:43:20
  * @FilePath: /panda-dict/README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -28,7 +28,8 @@
 ### 界面设置
 - 多种主题选择，自适应深色模式
 - 控制按钮位置自定义
-![胖哒词典设置](./image/README/pandadictappearancesetting1.png "胖哒词典设置") ![胖哒词典设置](./image/README/pandadictappearancesetting2.png "胖哒词典设置")
+  
+    ![胖哒词典设置](./image/README/pandadictappearancesetting1.png "胖哒词典设置") ![胖哒词典设置](./image/README/pandadictappearancesetting2.png "胖哒词典设置")
 
 ### 快捷键设置
 1. 按删除键 <kbd>Backspace</kbd> ( <kbd>←</kbd> ) 删除已设置的快捷键
