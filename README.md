@@ -2,7 +2,7 @@
  * @Author: KrisLee 2030000020@qq.com
  * @Date: 2022-09-22 15:53:48
  * @LastEditors: KrisLee 2030000020@qq.com
- * @LastEditTime: 2022-09-25 14:14:40
+ * @LastEditTime: 2022-09-25 18:27:33
  * @FilePath: /panda-dict/README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -27,7 +27,7 @@
 ### API 注册
 1. 点击前往[有道智云](https://ai.youdao.com/)
 2. 注册登陆账号
-3. 控制台 > 业务指南 > 应用总览 > 选择 **文本翻译** 和 **通用文字识别** 服务 > API接入方式
+3. 控制台 > 业务指南 > 应用总览 > 创建应用 > 选择 **文本翻译** 和 **通用文字识别** 服务 > API接入方式
    ![有道智云控制台](./image/README/youdaozhiyunapi1.png "有道智云控制台")
 4. 控制台 > 业务指南 > 业务总览：复制对应 **应用ID** 和 **应用密钥** 到胖哒词典API设置中
    ![有道智云控制台](./image/README/youdaozhiyunapi2.png "有道智云控制台")![胖哒词典设置](./image/README/pandadictapisetting.png "胖哒词典设置")
