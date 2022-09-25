@@ -2,7 +2,7 @@
  * @Author: KrisLee 2030000020@qq.com
  * @Date: 2022-09-22 15:53:48
  * @LastEditors: KrisLee 2030000020@qq.com
- * @LastEditTime: 2022-09-25 13:59:39
+ * @LastEditTime: 2022-09-25 14:06:47
  * @FilePath: /panda-dict/README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -10,8 +10,10 @@
 # PandaDict 胖哒词典
 ![LOGO](./image/README/pandadict_logo.svg "LOGO")
 
-#### 一款快捷桌面词典。支持文本翻译、截图翻译、查词、OCR识别，支持上百种语言。
+***一款快捷桌面词典。支持文本翻译、截图翻译、查词、OCR识别，支持上百种语言。***
 
+### 目录
+[toc]
 
 ### 主题预览
  #### 浅色
