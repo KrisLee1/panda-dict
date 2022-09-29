@@ -1,8 +1,8 @@
 /*
  * @Author: error: git config user.name && git config user.email & please set dead value or install git
  * @Date: 2022-09-13 18:38:28
- * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
- * @LastEditTime: 2022-09-17 22:07:08
+ * @LastEditors: KrisLee 2030000020@qq.com
+ * @LastEditTime: 2022-09-29 21:52:26
  * @FilePath: /VSCodeProjects/Electron/card-dict/electron/lib/create_windows.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -120,6 +120,7 @@ const createCaptureWindow = () => {
         skipTaskbar: true,
         enableLargerThanScreen: true,
         hasShadow: false,
+        titleBarOverlay:true,
         webPreferences: {
             preload: path.join(__dirname, '../preload.js')
         }
@@ -138,7 +139,7 @@ const createCaptureWindow = () => {
     });
 
     ipcMain.on('captured', (event) => {
-        captureWindow.setSimpleFullScreen(true);
+        // captureWindow.setSimpleFullScreen(true);
     });
 
     ipcMain.on('capture-image', (event, image) => {
@@ -147,12 +148,12 @@ const createCaptureWindow = () => {
         shortcutShowWindow(true);
     });
 
-    globalShortcut.register('Esc', () => {
+    ipcMain.on('esc-capture', (event) => {
         if (captureWindow) {
             captureWindow.hide();
             captureWindow.loadURL(`file://${path.join(__dirname, 'screen_capture.html')}`);
         }
-    })
+    });
 
     BrowserWindow.captureWindow = captureWindow;
 }

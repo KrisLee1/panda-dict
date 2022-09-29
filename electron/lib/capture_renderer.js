@@ -1,8 +1,8 @@
 /*
  * @Author: error: git config user.name && git config user.email & please set dead value or install git
  * @Date: 2022-09-09 14:28:03
- * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
- * @LastEditTime: 2022-09-13 16:36:56
+ * @LastEditors: KrisLee 2030000020@qq.com
+ * @LastEditTime: 2022-09-29 21:51:15
  * @FilePath: /VSCodeProjects/Electron/card-dict/electron/lib/capture_renderer.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -14,6 +14,15 @@ const ctx = canvas.getContext('2d');
 const rect = {x: 0, y: 0, w: 0, h: 0};  // 选取框
 let start = false;  // 开始画图
 let scale = 1;      // 屏幕缩放倍数
+
+// 退出截图
+window.addEventListener('keyup', function(event) {
+    console.log(event.key);
+    if(event.key == 'Escape'){
+        window.electronAPI.escCapture();
+    }
+});
+
 
 // 画选取框
 const draw = (rect) => {
